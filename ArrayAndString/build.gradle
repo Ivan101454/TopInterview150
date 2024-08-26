@@ -2,7 +2,7 @@ plugins {
     id 'java'
 }
 
-group = 'ru.clevertec'
+group = 'by.ivan101454'
 version = '1.0-SNAPSHOT'
 
 repositories {
@@ -10,6 +10,10 @@ repositories {
 }
 
 dependencies {
+
+    // https://mvnrepository.com/artifact/org.assertj/assertj-core
+    testImplementation 'org.assertj:assertj-core:3.26.3'
+
     testImplementation platform('org.junit:junit-bom:5.10.0')
     testImplementation 'org.junit.jupiter:junit-jupiter'
 }
